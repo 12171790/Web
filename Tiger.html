@@ -10,118 +10,174 @@
 </head>
 
 <body>
-    <h1>Tiger</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="home">Home</a>
+            </li>
+            <li>
+                <a href="about.html">about</a>
+            </li>
+            <li>
+                <a href="contact">contact</a>
+            </li>
+        </ul>
+    </nav>
+    <amin>
+        <h1>Tiger</h1>
 
-    <!--src is image's address, alt is information about image-->
-    <img src="images/tiger.png" alt="Fancy tiger">
-    <!--html's attribute is small information about tag-->
-    <!--not between opening and closing tags-->
-    <!--inside one of tags-->
-    <!--div는 block element, span은 inline element, css를 사용해서 스타일을 정의-->
-    <div>
-        <a href="http://www.google.com"><span>I'm a link to Google</span></a>
-        <a href="about.html">I'm a link to About page </a>
-    </div>
+        <!--src is image's address, alt is information about image-->
+        <img src="images/tiger.png" alt="Fancy tiger">
+        <!--html's attribute is small information about tag-->
+        <!--not between opening and closing tags-->
+        <!--inside one of tags-->
+        <!--div는 block element, span은 inline element, css를 사용해서 스타일을 정의-->
+        <div>
+            <a href="http://www.google.com"><span>I'm a link to Google</span></a>
+            <a href="about.html">I'm a link to About page </a>
+        </div>
 
-    <!--수평선을 긋는 태그. 이야기의 전환이나 주제의 변경을 나타냄. css로 꾸미기 가능-->
-    <hr>
-    <!--줄바꿈 태그-->
-    <br>
-    <!--sup는 기준선보다 위에 적히는 글 태그(윗첨자), sub는 기준선보다 아래 적히는 태그(아래첨자)-->
-    <sup>
-    sup
-    </sup>
-    hello
-    <sub> 
-    sub
-    </sub>
+        <!--수평선을 긋는 태그. 이야기의 전환이나 주제의 변경을 나타냄. css로 꾸미기 가능-->
+        <hr>
+        <!--줄바꿈 태그-->
+        <br>
+        <!--sup는 기준선보다 위에 적히는 글 태그(윗첨자), sub는 기준선보다 아래 적히는 태그(아래첨자)-->
+        <sup>
+            sup
+        </sup>
+        hello
+        <sub>
+            sub
+        </sub>
 
-    <p><!--단락 요소-->
-        The <b>tiger (Panthera tigris)</b><!--굵은 글씨--> is the largest living cat species and a member of the genus
-        <a href="https://en.wikipedia.org/wiki/Panthera">Panthera.</a>
-        It is most recognisable for its dark vertical stripes on orange fur with a white underside.
-        An apex predator, it primarily preys on ungulates, such as deer and wild boar. It is territorial and generally a
-        solitary but social predator, requiring large contiguous areas of habitat to support its requirements for prey
-        and
-        rearing of its offspring.
-        Tiger cubs stay with their mother for about two years and then become independent, leaving their mother's home
-        range
-        to establish their own.
+        <!--html 엔티티 &로 시작 ;로 끝. 사이에 글자를 입력-->
+        &spades; 1 &lt; 6, 6 &gt; 4
 
-        The tiger was first scientifically described in 1758. It once ranged widely from the Eastern Anatolia Region in
-        the
-        west to the Amur River basin in the east, and in the south from the foothills of the Himalayas to Bali in the
-        Sunda
-        Islands.
-        Since the early 20th century, tiger populations have lost at least 93% of their historic range and have been
-        extirpated from Western and Central Asia, the islands of Java and Bali, and in large areas of Southeast and
-        South
-        Asia and China.
-        What remains of the range where tigers still roam free is fragmented, stretching in spots from Siberian
-        temperate
-        forests to subtropical and tropical forests on the Indian subcontinent, Indochina and a single Indonesian
-        island,
-        Sumatra.
-    </p>
+        <!--Semantic Markup - 의미있는 내용의 마크업 또는 그 요소의 내용의 의미에 관련된 마크업 
+        div와 span만으로 구역을 나누면 해당 구역이 의미하는 바가 명확하지 않음
+        main, header, nav, footer 등을 사용하여 해당 구역이 무엇을 의미하는지
+        알려주면 접근성(스크린 리더)과 크롬과 같은 프로그램에 유용함
+        또한 해당 코드를 읽거나 다른 개발자들이 볼 때 더 편리함-->
+        <!--main - 문서의 주요 내용. 여러 페이지에서 반복되는 요소는 제외
+            nav - 페이지에서 다른 부분을 가리키는 네이게이션 링크 요소
+            section - 웹 사이트의 독립적인 부분
+            article - 웹 사이트의 독립적인 구성
+            aside - 사이드바나 말풍선 등을 표현
+            header - 내용을 소개
+            footer - 꼬릿말. arcticle 안에 머릿말과 꼬릿말을 넣을 수 있음-->
 
-    <p>
-        The tiger is listed as Endangered on the IUCN Red List.
-        As of 2015, the global wild tiger population was estimated to number between 3,062 and 3,948 mature individuals,
-        with most populations living in small isolated pockets.
-        India currently hosts the largest tiger population.
-        Major reasons for population decline are habitat destruction, habitat fragmentation and poaching.
-        Tigers are also victims of human–wildlife conflict, due to encroachment in countries with a high human
-        population
-        density.
 
-        The tiger is among the most recognisable and popular of the world's charismatic megafauna.
-        It featured prominently in the ancient mythology and folklore of cultures throughout its historic range and
-        continues to be depicted in modern films and literature, appearing on many flags, coats of arms and as mascots
-        for
-        sporting teams.
-        The tiger is the national animal of India, Bangladesh, Malaysia and South Korea.
-    </p>
 
-    <h2>Etymology</h2>
-    <p>tiger is ... </p>
+        <p><!--단락 요소-->
+            The <b>tiger (Panthera tigris)</b><!--굵은 글씨--> is the largest living cat species and a member of the genus
+            <a href="https://en.wikipedia.org/wiki/Panthera">Panthera.</a>
+            It is most recognisable for its dark vertical stripes on orange fur with a white underside.
+            An apex predator, it primarily preys on ungulates, such as deer and wild boar. It is territorial and
+            generally a
+            solitary but social predator, requiring large contiguous areas of habitat to support its requirements for
+            prey
+            and
+            rearing of its offspring.
+            Tiger cubs stay with their mother for about two years and then become independent, leaving their mother's
+            home
+            range
+            to establish their own.
 
-    <h2>Taxonomy</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt consequuntur vel numquam reiciendis
-        velit,
-        porro suscipit eos autem sed quos repudiandae voluptatum cum reprehenderit laborum amet error, sapiente harum!
-        Impedit odio facilis perferendis mollitia nam commodi, quam iusto repellat optio excepturi recusandae odit
-        minima
-        delectus inventore quas? Alias soluta error saepe temporibus doloribus sit architecto dolorem blanditiis cum
-        quo!
-        Molestiae deleniti sed eum dolor iusto dolore esse praesentium itaque aliquam doloremque voluptatum libero
-        perspiciatis repellendus minima nostrum eos laborum repudiandae, ad voluptates. Ex illum optio, pariatur quia
-        tenetur commodi.
-        Exercitationem, harum consectetur. Saepe, iste molestiae. Quod ipsa corporis et, ipsam incidunt nihil autem
-        dicta
-        numquam culpa aperiam tenetur quia repudiandae excepturi minus atque nam illo iste ducimus, quisquam hic?
-        Magnam libero omnis ipsum tempora ex unde, mollitia at ullam et fuga culpa dolores cumque minus aspernatur
-        minima
-        assumenda harum, quam esse facilis. Blanditiis est hic accusamus iusto totam earum?</p>
-    <h3>Subspecies</h3>
-    <h3>Evolution</h3>
+            The tiger was first scientifically described in 1758. It once ranged widely from the Eastern Anatolia Region
+            in
+            the
+            west to the Amur River basin in the east, and in the south from the foothills of the Himalayas to Bali in
+            the
+            Sunda
+            Islands.
+            Since the early 20th century, tiger populations have lost at least 93% of their historic range and have been
+            extirpated from Western and Central Asia, the islands of Java and Bali, and in large areas of Southeast and
+            South
+            Asia and China.
+            What remains of the range where tigers still roam free is fragmented, stretching in spots from Siberian
+            temperate
+            forests to subtropical and tropical forests on the Indian subcontinent, Indochina and a single Indonesian
+            island,
+            Sumatra.
+        </p>
 
-    <h2>Breeds of Tigers</h2>
-    <ul> <!--unorder list or order list's direct child must be only li tag-->
-        <li>A group
-            <ul>
-                <li>Sumatran tiger</li>
-                <li>Bengal tiger</li>
-            </ul>
-        </li>
-        <li>B group
-            <ul>
-                <li>Javan tiger</li>
-                <li>Caspian tiger</li>
-            </ul>
-        </li>
-    </ul>
-    <img src="https://e0.pxfuel.com/wallpapers/39/180/desktop-wallpaper-cool-tiger-background-awesome-tiger.jpg">
+        <p>
+            The tiger is listed as Endangered on the IUCN Red List.
+            As of 2015, the global wild tiger population was estimated to number between 3,062 and 3,948 mature
+            individuals,
+            with most populations living in small isolated pockets.
+            India currently hosts the largest tiger population.
+            Major reasons for population decline are habitat destruction, habitat fragmentation and poaching.
+            Tigers are also victims of human–wildlife conflict, due to encroachment in countries with a high human
+            population
+            density.
 
+            The tiger is among the most recognisable and popular of the world's charismatic megafauna.
+            It featured prominently in the ancient mythology and folklore of cultures throughout its historic range and
+            continues to be depicted in modern films and literature, appearing on many flags, coats of arms and as
+            mascots
+            for
+            sporting teams.
+            The tiger is the national animal of India, Bangladesh, Malaysia and South Korea.
+        </p>
+
+        <h2>Etymology</h2>
+        <p>tiger is ... </p>
+
+        <section>
+            <h2>Taxonomy</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt consequuntur vel numquam
+                reiciendis
+                velit,
+                porro suscipit eos autem sed quos repudiandae voluptatum cum reprehenderit laborum amet error, sapiente
+                harum!
+                Impedit odio facilis perferendis mollitia nam commodi, quam iusto repellat optio excepturi recusandae
+                odit
+                minima
+                delectus inventore quas? Alias soluta error saepe temporibus doloribus sit architecto dolorem blanditiis
+                cum
+                quo!
+                Molestiae deleniti sed eum dolor iusto dolore esse praesentium itaque aliquam doloremque voluptatum
+                libero
+                perspiciatis repellendus minima nostrum eos laborum repudiandae, ad voluptates. Ex illum optio, pariatur
+                quia
+                tenetur commodi.
+                Exercitationem, harum consectetur. Saepe, iste molestiae. Quod ipsa corporis et, ipsam incidunt nihil
+                autem
+                dicta
+                numquam culpa aperiam tenetur quia repudiandae excepturi minus atque nam illo iste ducimus, quisquam
+                hic?
+                Magnam libero omnis ipsum tempora ex unde, mollitia at ullam et fuga culpa dolores cumque minus
+                aspernatur
+                minima
+                assumenda harum, quam esse facilis. Blanditiis est hic accusamus iusto totam earum?</p>
+        </section>
+        <h3>Subspecies</h3>
+        <h3>Evolution</h3>
+
+        <h2>Breeds of Tigers</h2>
+        <ul> <!--unorder list or order list's direct child must be only li tag-->
+            <li>A group
+                <ul>
+                    <li>Sumatran tiger</li>
+                    <li>Bengal tiger</li>
+                </ul>
+            </li>
+            <li>B group
+                <ul>
+                    <li>Javan tiger</li>
+                    <li>Caspian tiger</li>
+                </ul>
+            </li>
+        </ul>
+        <img src="https://e0.pxfuel.com/wallpapers/39/180/desktop-wallpaper-cool-tiger-background-awesome-tiger.jpg">
+    </amin>
+    <footer>
+        <p>This is my website</p>
+        <ul>
+            <li><a href = "contact">contact</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
