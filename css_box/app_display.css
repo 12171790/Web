@@ -1,0 +1,33 @@
+/*h1은 block element, span은 lnline element
+display를 사용하여 block element를 inline element로 바꿀 수 있다
+반대로 block element로 바꿀 수도 있음
+
+inline element라면 width와 height 특성은 무시됨
+padding은 적용되지만 주변 내용을 밀어내거나 하지는 않음.
+
+요소를 숨기려면 display none을 사용
+*/
+h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    display: inline;
+}
+
+span {
+    background-color: yellowgreen;
+    border: 1px solid black;
+    width: 500px;
+    padding: 10px;
+    margin: 50px;
+    /*inline element이므로 margin은 해당 줄에만 영향을 미침.*/
+}
+
+/*inline-block element는 inline element처럼 작용하지만 너비, 높이, padding, margin이 적용됨*/
+div {
+    height: 200px;
+    width: 200px;
+    background-color: palegreen;
+    border: 3px solid black;
+    display: inline-block;
+    margin: 50px;
+}

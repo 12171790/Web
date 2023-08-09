@@ -1,0 +1,62 @@
+/*콘텐츠의 영역을 width, height로 지정*/
+body {
+    margin: 0;
+}
+div {
+    width: 200px;
+    height: 300px;
+}
+
+h1 {
+    background-color: #FBA1B7;
+    width: 200px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+/*border에는 주로 px 사용
+색상과 넓이, 스타일을 적용해야 테두리가 나타남!
+box-sizing: border-box를 사용하면 테두리를 포함하여 width와 height 결정. 결정된 크기에 테두리를 씌우는 것이 아님*/
+#one {
+    background-color: #91C8E4;
+    border-width: 5px;
+    border-color: #FBA1B7;
+    border-style: solid;
+    /* box-sizing: border-box; */
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+/*border의 방향마다 다르게 설정 가능*/
+#two {
+    background-color: #749BC2;
+    border-width: 3px;
+    border-color: #FFD1DA;
+    border-style: dashed;
+    border-left-color: #FBA1B7;
+    border-left-width: 8px;
+    padding-right: 50px;
+    margin: 200px
+}
+/*속기법 border: width style color
+border-radius border의 곡률을 조정 px과 %를 사용(50%를 사용하면 원을 그릴 수 있음)*/
+#three {
+    background-color: #4682A9;
+    border: 4px solid grey;
+    border-left-style: dotted;
+    border-radius: 10px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+/*padding : 콘텐츠 박스와 border 사이의 공간
+padding 10px -> 모든 테두리에 10px의 공간
+padding 10px 5px ->위아래 왼쪽오른쪽 방향 공간
+padding 10px 5px 3px ->위 왼쪽오른쪽 아래 공간
+padding 10px 7px 5px 3px ->위 오른쪽 아래 왼쪽 공간*/
+button {
+    padding: 20px 7px;
+}
+
+/*margin : 두 요소에 둘린 각 테두리 간의 간격
+padding의 속기법과 동일*/
+

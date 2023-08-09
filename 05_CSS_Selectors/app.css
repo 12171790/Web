@@ -1,0 +1,210 @@
+/* * {
+    background-color: cyan;
+} */
+/* 
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1,h2 {
+    color: #1d3557;
+}
+
+#signup{
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+span {
+    color: #457b9d;
+}
+
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+.post a {
+    color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a {
+    color: #e63946;
+}
+
+h2 + button {
+    font-size: 20px;
+}
+
+footer > a {
+    color: #457b9d;
+}
+
+input[type="password"] {
+    color: greenyellow;
+}
+
+a[href*="google"]{
+    color: #1d3557;
+}
+
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(2n){
+    background-color: #dfe8dc;
+}
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+p::selection {
+    background-color: #fcbf49;
+}
+
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+button:hover {
+    background-color: olive;
+}
+
+button {
+    background-color: magenta !important;
+} */
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1, h2 {
+    color: #1d3557;
+}
+
+/*id 선택자를 사용할 때는 #을 사용*/
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+span {
+    color: #457;
+}
+
+/*class 선택자를 사용할 때는 .을 사용*/
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+/*(li, a) 라면 li와 a 태크 모두 선택 (li a)라면 li에 속한 a 태그 선택 li는 선택하지 않음*/
+
+/*post class에 속한 a 태크 선택*/
+.post a {
+    color: #0d9196;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a {
+    color:#e63946;
+}
+
+/*h1+p h1 태그 다음에 오면서 같은 단계인 p 태그를 선택*/
+/*input 태그 다음에 오는 button 태그만 조절 (부모와 자식 관계가 아님)*/
+h2 + button {
+    font-size: 20px;
+    background-color: pink;
+}
+
+/*직계자손 선택자 div > li div 태그 바로 다음에 오는 li 선택. 한 단계 아래만 선택*/
+footer > a {
+    color: #a8dadc;
+}
+
+/*속성 선택자 input[type="text"] input 태그 중 type이 text인 것만을 선택. type 뿐만 아니라 class 등도 가능*/
+/*a[href*="example"] href 속성에 example이 포함된 모든 a 태그*/
+/*$=.org는 .org로 끝나는 것을 의미*/
+/**/
+input[type="password"] {
+    color: #e63946;
+}
+
+a[href*="google"] {
+    color: #1d3557;
+}
+
+/*가상 클래스 선택자 끝에 붙어 상태를 특정
+a: hover a 태그에서 hover 상태일 때를 의미 (hover 커서를 올려놓은 상태)
+active 클릭 했을 때의 상태
+MDN에 다양한 예시 존재*/
+
+.post button:hover{
+    background-color:#e63946;
+    color: #f1faee;
+}
+
+.post a:hover{
+    text-decoration: underline;
+}
+
+.post button:active{
+    background-color: #02c39a;
+}
+
+/*매 2번째 post 선택 (2)를 넣으면 2번쨰 post만 선택*/
+.post:nth-of-type(2n){
+    background-color: #afc9a7;
+}
+
+/*가상 요소 선택된 요소의 특정 부분만을 특정
+p::first-letter p 태그의 첫번째 글자
+p::first-line p 태그의 첫번째 줄
+p::selection p 태그에서 커서로 선택한 부분*/
+
+h2::first-letter {
+    font-size: 30px;
+}
+
+/*가장 마지막에 적힌 css 스타일이 적용됨*/
+/*더 구체적인 선택자를 우선적으로 적용
+Inline Styles(html 안에서 style을 정하는 것. 주로 사용하지 않음) - ID - Class - Element 순 왼쪽일수록 구체적
+style 뒤에 !important를 넣으면 다른 어떤 요소보다 우선시하게 됨*/
+button:hover {
+    background-color: olive;
+}
+
+/*상위 태그에 스타일을 부여하고 하위 태그에 스타일을 부여하지 않으면 하위 태그가 모두 상위 태그의 스타일을 상속.
+일부 요소들은 상속 받지 않도록 설정되어 있음. ex) input, button 태그.
+button {
+ color: inherit;   
+}을 사용하면 상속 받을 수 있음.*/

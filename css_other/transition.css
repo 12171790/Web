@@ -1,0 +1,42 @@
+/*transiton 변환에 애니메이션 효과를 부여
+transition 바꾸고 싶은 특성 - 바뀌는 시간 - timing function - 딜레이 - */
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: magenta;
+    transition: background-color 0.5s, border-radius 2s; 
+}
+
+.circle:hover {
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+/*timing function 애니메이션의 전환 속도 등을 조절. 빠르게 바뀌다가 천천히 바뀌는 등*/
+
+section div {
+    height: 100px;
+    width: 100px;
+    background-color: turquoise;
+    margin: 20px 0;
+    transition: margin-left 3s;
+}
+
+section:hover div {
+    margin-left: 500px;
+}
+
+/*easings.net에서 cubic-bezier 참고 가능*/
+
+div:nth-of-type(1) {
+    transition-timing-function: ease-in;
+}
+div:nth-of-type(2) {
+    transition-timing-function: ease-out;
+}
+div:nth-of-type(3) {
+    transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+div:nth-of-type(4) {
+    transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1.5);
+}

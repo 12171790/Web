@@ -1,13 +1,17 @@
-h2 {
-    color : indigo;
-    background-color: plum;
-}
-
-button {
-    color : magenta;
-    background-color: cyan;
+h1 {
+    text-align:  center;
+    font-weight: 400;
+    text-decoration: #f78620 wavy underline 3px;
+    letter-spacing: 20px;
+    font-size: 80px;
+    font-family: Monospace;
 }
 
 p {
-    color : olive;
+    font-weight: 300;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
 }

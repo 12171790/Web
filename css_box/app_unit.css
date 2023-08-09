@@ -1,0 +1,76 @@
+/*percentage :
+width: 50% 부모 요소를 기준으로 크기를 결정 (부모 요소의 절반)
+line-height: 50% 요소 자체의 크기를 기반으로 결정 (요소 자체의 폰트 크기 등)*/
+section {
+    background-color: #FF9B9B;
+    width: 800px;
+    height: 800px;
+}
+
+div {
+    background-color: #FFD6A5;
+    width: 50%;
+    height: 50%;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%;/*폰트 크기가 40px이므로 line-height는 80px*/
+}
+
+/*
+em : 부모 요소의 font size의 몇 배인지 결정
+font-size외에 em을 사용하면 현재 요소의 font size를 기준으로 몇 배인지 결정*/
+#ems {
+    font-size: 20px;
+}
+
+#ems h2 {
+    font-size: 2em;
+    margin-left: 1em;
+    /*article이 30px이면 h2의 font size는 60px. margin-left의 1em은 60px*/
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+#ems p {
+    font-size: 0.5em;
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #CBFFA9;
+    color: #FF9B9B;
+}
+
+/*em의 문제점은 태그들이 중첩될수록 크기가 누적되어 커지거나 작아질 수 있음*/
+#ems ul {
+    font-size: 1.5em;
+}
+
+/*rem (root em)은 문서 전체에서 하나의 글꼴 크기에 비례하여 크기 결정
+html 태그의 디폴트 글꼴 크기가 기준
+html {
+    font-size: ;
+}를 통해 바꿀 수 있음!*/
+
+#rems h2{
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 1.5rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}

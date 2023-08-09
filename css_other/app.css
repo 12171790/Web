@@ -1,0 +1,21 @@
+/*rgba에서 alpha channel 값이 1에 가까우면 불투명 0에 가까우면 투명*/
+section {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+
+#rgba {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255,255,255,0.5)
+    /*background-color: #00cca0 16진법의 마지막에 00~FF사이의 숫자를 추가하여 alpha. 채널 추가 가능*/
+}
+
+/*opacity 0이면 완전 투명 1이면 불투명. alpha 채널과 다르게 요소 전체의 불투명도를 조절*/
+#opacity {
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    opacity: 0.5;
+}

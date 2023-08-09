@@ -1,0 +1,44 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: navy;
+    border: 5px solid black;
+    margin: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#middle {
+    background-color: green;
+}
+
+/*position의 default 값은 static*/
+#static #middle {
+    position: static;
+    top: 100px;
+}
+
+#relative #middle {
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+/*absolute는 문서에서 공간을 차지하지 않도록 함. 문서 흐름에서 제거
+부모갸 있다면 부모의 위치를 기준으로 이동. 부모가 없다면 body를 기준으로 이동*/
+#absolute {
+    position: relative;
+}
+#absolute #middle {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/*fixed는 문서에서 공간을 차지하지 않고, 흐름에서 제거되며 body에 대한 상대적인 위치
+스크롤을 내려도 해당 위치에 고정됨*/
+#fixed #middle {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
