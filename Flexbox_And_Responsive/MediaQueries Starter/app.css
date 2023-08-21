@@ -5,9 +5,19 @@ body {
 h1 {
     font-size: 6em;
     text-align: center;
+    color: red;
 }
 nav {
     font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul,li {
@@ -16,5 +26,38 @@ ul,li {
     padding: 0;
 }
 
+/* @media (min-width: 600px) and (max-width: 800px){/*조건문! min-width(너비가 최소 800px가 될 때 까지 적용), max-width를 주로 사용
+    h1 {
+        color: purple;
+    }
+} */
 
+@media (min-width: 500px) {
+    h1 {
+        color: orange;
+    }
+
+}
+
+@media (orientation: landscape) /*화면 방향이 가로일 때*/ {
+    body {
+        background-color: green;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+    nav, nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3em;
+    }
+}
 
