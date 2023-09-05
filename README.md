@@ -8,6 +8,7 @@
 2. string에는 여러 메소드가 존재 (mdn에서 검색)
 3. null : 값을 지정하는 않는 것으로 설정 (let 변수 = null)
 4. undefined : 값이 할당되지 않은 변수에 할당. 아무것도 정의되지 않음을 의미.
+5. false, 0, " ", null, undefined, NaN
 ---
 ---
 #### *Section 15* String
@@ -36,6 +37,6 @@ Math.random() : 0 ~ 1 사이의 숫자 중 임의의 수 생성.
 
 console.log() : 입력한 값을 출력.
 alert() : 입력한 메시지의 팝업 창 출력.
-prompt() : 사용자로부터 입력을 받아옴(문자열로). -> parseInt()를 사용하면 string을 number로 바꿀 수 있다.
+prompt() : 사용자로부터 입력을 받아옴(문자열로). -> parseInt()를 사용하면 string을 number로 바꿀 수 있다. (toLowerCase(), toUpperCase() 사용 가능)
 
 HTML에서 script 태그를 활용하여 JavaScript 파일을 HTML에 연결할 수 있음. 보통 body 태그의 맨 마지막에 삽입.
