@@ -43,4 +43,32 @@ prompt() : 사용자로부터 입력을 받아옴(문자열로). -> parseInt()�
 HTML에서 script 태그를 활용하여 JavaScript 파일을 HTML에 연결할 수 있음. 보통 body 태그의 맨 마지막에 삽입.
 
 ---
-#### *Section 17* Data Structure
+#### *Section 17* Data Structure Array
+
+배열 선언 let 변수명 = []; [] 안에 배열에 넣을 값들을 적음. 변수명.length를 이용해 배열의 길이 파악 가능 배열의 길이는 최대 index보다 1만큼 큼. [] 안에 같은 타입의 변수만 넣을 필요는 없음.
+
+배열 간의 ===, == 연산을 할 때 JavaScript는 배열 안 내용은 고려하지 않음. 비교하는건 메모리에서 참조되는 값. let num = []을 하면 num에 메모리 reference 할당.
+
+위의 이유로 인해 const로 배열을 선언하여도 배열 contents는 변경 가능. 새로운 reference를 할당하려 한다면 오류가 발생.
+
+array1[행][열]
+
+**Array에 내장된 Methods**     *MDN을 참고할 것!
+1. push : 배열의 가장 끝 부분에 배열 요소 추가. 변수명.push(넣고 싶은 항목) 여러 개를 넣을 수도 있다.
+2. pop : 배열의 마지막 요소를 삭제하고 마지막 요소를 반환. 변수명.pop()
+3. shift : 배열의 시작 요소를 삭제하고 첫번째 요소를 반환. 변수명.shift()
+4. unshift : 배열의 시작 부분에 요소를 추가. 변수명.unshift(넣고 싶은 항목)
+5. concat : 2개의 배열을 붙여서 새로운 배열을 만들어냄. array1.concat(array2) array1에 array2를 이어 붙임. array1을 update한 것은 아님.
+6. includes : true나 false로 응답. 해당 배열에 요소가 있는지 알려줌. array1.includes('blue') array1에 blue가 있다면 true 반환.
+7. indexOf : 배열에 요소가 몇번째 index인지 반환. array1.indexOf('blue') blue가 첫번째 index에 있다면 1을 반환. 만약 array1에 blue가 2개 있다면 첫번째 blue의 위치만을 반환. 배열에 없는 요소를 찾으려 한다면 -1을 반환. 
+8. reverse : 배열을 뒤집어줌. 원본을 수정하므로 주의해야함. array1 = [1, 2, 3] array1.reverse()를 하면 [3, 2, 1]을 반환하며 array1이 [1, 2, 3]으로 변함.
+9. slice : 배열의 일부를 복사하는 method. array1.slice(시작 index, 끝 index) -> 시작 index부터 끝 index 바로 앞까지 복사. 시작 index와 끝 index 둘 다 생략 가능. slice(-3)을 넣으면 마지막 3개의 요소만 복사.
+10. splice : 기존 요소들을 제거하거나 대체, 새로운 요소를 추가하여 원래 배열 자체를 변경. array1.splice(시작 index, 제거할 요소 갯수(새로운 값을 추가할 경우 0), 추가할 새로운 값 (여러 개 추가 가능)).
+11. sort : 배열을 정렬하는 method. 함수를 사용해서 배열 방법을 커스터마이징 할 수 있다.
+
+---
+*Section 18 Data Structure Object literal*
+
+property = key + value pair를 이용하여 데이터가 저장. 순서보단 데이터를 key - value로 쌍을 이뤄 저장한다는 점이 중요. reference type.
+
+const person = {firstName: 'Mick', lastName: 'Jagger'}
