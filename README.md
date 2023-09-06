@@ -69,6 +69,12 @@ array1[행][열]
 ---
 *Section 18 Data Structure Object literal*
 
-property = key + value pair를 이용하여 데이터가 저장. 순서보단 데이터를 key - value로 쌍을 이뤄 저장한다는 점이 중요. reference type.
+property = key + value pair를 이용하여 데이터가 저장. 순서보단 데이터를 key - value로 쌍을 이뤄 저장한다는 점이 중요. reference type. 이때 모든 key들은 string 타입으로 변환되어 저장됨.
 
 const person = {firstName: 'Mick', lastName: 'Jagger'}
+
+데이터에 접근하려면 person["firstName"] or person.firstName. [] 안에 표현식을 넣을 수 있음. 예를 들어 변수나 연산 기호 등.
+
+const midterms = {danielle: 96, thomas: 78}에서 thomas의 점수를 바꿀 경우 : midterms.thomas = 79
+
+값을 추가할 경우 : midterms.kiwoong = 100
