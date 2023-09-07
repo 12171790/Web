@@ -9,7 +9,8 @@
 3. null : 값을 지정하는 않는 것으로 설정. (let 변수 = null)
 4. undefined : 값이 할당되지 않은 변수에 할당. 아무것도 정의되지 않음을 의미.
 5. false, 0, " ", null, undefined, NaN을 제외한 나머지는 true.
-6. 논리식이 여러 개 사용된 경우 AND가 OR보다 먼저 계산됨. 
+6. 논리식이 여러 개 사용된 경우 AND가 OR보다 먼저 계산됨.
+7. prompt로 사용자의 입력을 받으면 문자열 형태. 이를 int형으로 바꾸려면 parseInt(input)을 사용.
 ---
 ---
 #### *Section 15* String
@@ -25,8 +26,11 @@
 ##### 2. Math 객체
 
 수학과 관련된 메소드와 특성 모음 (PI, round - 반올림, abs, pow, floor - 내림 등)  MDN을 참고할 것!
-Math.random() : 0 ~ 1 사이의 숫자 중 임의의 수 생성.
+Math.random() : 0 < random number < 1 임의의 수 생성.
 
+원하는 범위의 난수를 생성하고 싶은 경우 (최대 수 max, 최소 수 min)
+
+const randNumber = Math.floor(Math.random() * max) + min
 ---
 #### *Section 16* Boolean Logic (의사결정)
 
@@ -77,4 +81,17 @@ const person = {firstName: 'Mick', lastName: 'Jagger'}
 
 const midterms = {danielle: 96, thomas: 78}에서 thomas의 점수를 바꿀 경우 : midterms.thomas = 79
 
-값을 추가할 경우 : midterms.kiwoong = 100
+값을 추가할 경우 : midterms.kiwoong(새로운 key) = 100
+
+배열과 객체를 합쳐 사용할 수 있다.
+
+const comments = [{username: 'Tammy', text: 'lol', votes: 9}];
+
+comments[0].text로 'lol'에 접근가능
+
+---
+*Section 19 Loop*
+
+while (조건문) {} -> 조건문이 참일 경우 반복. 반복 횟수를 정하지 않았을 때 유용하게 사용할 수 있다.
+
+for..of는 iterable object에 한해 사용 가능 object literal은 사용 불가. 이러한 경우 for..in을 사용.
