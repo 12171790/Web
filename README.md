@@ -95,3 +95,8 @@ comments[0].text로 'lol'에 접근가능
 while (조건문) {} -> 조건문이 참일 경우 반복. 반복 횟수를 정하지 않았을 때 유용하게 사용할 수 있다.
 
 for..of는 iterable object에 한해 사용 가능 object literal은 사용 불가. 이러한 경우 for..in을 사용.
+
+---
+*Section 20 Function*
+
+
