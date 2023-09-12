@@ -99,4 +99,10 @@ for..of는 iterable object에 한해 사용 가능 object literal은 사용 불�
 ---
 *Section 20 Function*
 
+함수에게 주어져야 할 인수가 전달되지 않으면 해당 매개변수는 함수 내에서 undefined로 처리.
+
+함수가 두 개 이상의 매개변수를 받을 땐 함수를 호출할 때 전달하는 인수의 순서가 중요. 여러 매개변수를 받을 때 같은 타입이 아니어도 괜찮다.
+
+*Section 21 More About Function*
+
 
