@@ -105,16 +105,37 @@ for..of는 iterable object에 한해 사용 가능 object literal은 사용 불�
 
 함수가 두 개 이상의 매개변수를 받을 땐 함수를 호출할 때 전달하는 인수의 순서가 중요. 여러 매개변수를 받을 때 같은 타입이 아니어도 괜찮다.
 
+---
 *Section 21 More About Function*
 
  if문, for문 등의 block 내에 let이나 const로 선언된 변수는 block 내에서만 유효함. var로 선언된 변수는 block 밖에서도 사용 가능.
 
  Lexical scope : 부모 함수의 안에 중첩된 내부 함수는 해당 부모 함수 내에서 정의된 변수에 몇 단계를 거치든 접근 가능. 부모 함수에서 내부 함수에 정의된 변수엔 접근 불가.
 
-객체 안의 method 안에서 객체를 가리키는 키워드로 this를 사용. 함수를 호출하는 방식에 따라 this가 가리키는 객체가 달라질 수 있음. 
+객체 안의 method 안에서 객체를 가리키는 키워드로 this를 사용. 함수를 호출하는 방식에 따라 this가 가리키는 객체가 달라질 수 있음. 메소드를 실행할 떄 . 왼쪽에 있는 객체를 가리킴.
 
 Try/Catch문 : 둘은 항상 같이 사용.
 
 try {오류를 발생시키려 하거나 오류가 날 것으로 예상되는 코드}
 
 catch {try 안에서 예외나 오류가 나왔을 때 실행할 코드}
+
+---
+*Section 22 Array Collback Method*
+
+ArrayMethod 폴더를 확인할 것.
+
+1. forEach 메소드 : 배열 안의 아이템에 대해 함수와 코드를 한 번씩 실행. (for of와 유사)
+2. map 메소드 : forEach와 유사하지만 함수의 결과를 가지고 새로운 배열을 생성.
+3. Arrow Function : 함수표현식에 사용. 함수를 정의하는 최신 구문. 화살표 함수 하나만 단독으로 사용은 불가. 변수로 저장해야함. 전달할 인수가 하나일 때는 괄호 생략 가능. 화살표 함수 내에서 this는 window 객체를 가리키게 됨.
+4. setTimeout : 인수로 실행할 함수와 지연시킬 시간(밀리초)을 받는다. 입력 받은 시간 동안 기다린 후 함수를 실행한다.
+
+setTimeout(() => {실행할 코드}, 3000) : 3초 후 함수 실행.
+5. setInterval : 전달 받은 함수를 일정 시간 마다 반복.
+setInterval을 실행할 때 id를 반환. 이를 변수에 저장한 후 clearInterval(id) 코드를 실행하면 setInverval의 반복이 종료.
+
+setInterval(() => {실행할 코드}, 2000) : 2초 마다 코드 반복.
+6. filter 메소드 : 배열에서 필터링하거나 부분 집합을 모아 새 배열을 만드는데 사용. 콜백 함수가 true or false를 반환하고, true를 반환하면 그 요소를 필터링된 배열에 추가. false라면 무시. 원본에 영향을 주지 않음.
+7. some 메소드 : boolean method. true or false를 반환. 배열 내의 요소 중 하나라도 콜백 함수의 조건을 만족하면 true를 반환. 배열 내의 모든 요소가 조건을 만족하지 못할 경우에만 false를 반환.
+8. every 메소드 : boolean method. true or false를 반환. 배열 내의 모든 요소에 대해 test를 진행. 배열의 모든 요소가 조건을 만족하면 true를 반환. 하나라도 조건을 만족하지 않으면 false를 반환.
+9. reduce 메소드 : 배열을 점차 줄여가면서 최종적으로 하나의 값만을 남김. 
