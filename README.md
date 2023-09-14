@@ -128,13 +128,8 @@ ArrayMethod 폴더를 확인할 것.
 1. forEach 메소드 : 배열 안의 아이템에 대해 함수와 코드를 한 번씩 실행. (for of와 유사)
 2. map 메소드 : forEach와 유사하지만 함수의 결과를 가지고 새로운 배열을 생성.
 3. Arrow Function : 함수표현식에 사용. 함수를 정의하는 최신 구문. 화살표 함수 하나만 단독으로 사용은 불가. 변수로 저장해야함. 전달할 인수가 하나일 때는 괄호 생략 가능. 화살표 함수 내에서 this는 window 객체를 가리키게 됨.
-4. setTimeout : 인수로 실행할 함수와 지연시킬 시간(밀리초)을 받는다. 입력 받은 시간 동안 기다린 후 함수를 실행한다.
-
-setTimeout(() => {실행할 코드}, 3000) : 3초 후 함수 실행.
-5. setInterval : 전달 받은 함수를 일정 시간 마다 반복.
-setInterval을 실행할 때 id를 반환. 이를 변수에 저장한 후 clearInterval(id) 코드를 실행하면 setInverval의 반복이 종료.
-
-setInterval(() => {실행할 코드}, 2000) : 2초 마다 코드 반복.
+4. setTimeout : 인수로 실행할 함수와 지연시킬 시간(밀리초)을 받는다. 입력 받은 시간 동안 기다린 후 함수를 실행한다. setTimeout(() => {실행할 코드}, 3000) : 3초 후 함수 실행.
+5. setInterval : 전달 받은 함수를 일정 시간 마다 반복. setInterval을 실행할 때 id를 반환. 이를 변수에 저장한 후 clearInterval(id) 코드를 실행하면 setInverval의 반복이 종료. setInterval(() => {실행할 코드}, 2000) : 2초 마다 코드 반복.
 6. filter 메소드 : 배열에서 필터링하거나 부분 집합을 모아 새 배열을 만드는데 사용. 콜백 함수가 true or false를 반환하고, true를 반환하면 그 요소를 필터링된 배열에 추가. false라면 무시. 원본에 영향을 주지 않음.
 7. some 메소드 : boolean method. true or false를 반환. 배열 내의 요소 중 하나라도 콜백 함수의 조건을 만족하면 true를 반환. 배열 내의 모든 요소가 조건을 만족하지 못할 경우에만 false를 반환.
 8. every 메소드 : boolean method. true or false를 반환. 배열 내의 모든 요소에 대해 test를 진행. 배열의 모든 요소가 조건을 만족하면 true를 반환. 하나라도 조건을 만족하지 않으면 false를 반환.
