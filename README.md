@@ -2,7 +2,7 @@
 
 ## Javascript 기초 공부
 ---
-### 변수
+### 정리
 
 1. 변수 선언 시 let, const 사용. (var을 사용하지 않음)
 2. string에는 여러 메소드가 존재. (mdn에서 검색)
@@ -11,6 +11,8 @@
 5. false, 0, " ", null, undefined, NaN을 제외한 나머지는 true.
 6. 논리식이 여러 개 사용된 경우 AND가 OR보다 먼저 계산됨.
 7. prompt로 사용자의 입력을 받으면 문자열 형태. 이를 int형으로 바꾸려면 parseInt(input)을 사용.
+8. Block은 함수를 제외하고 중괄호가 있는 모든 곳을 가리킴 if문 block 등등.
+9. Method는 객체에 종속된 특성으로 함수에 포함되는 개념. 모든 method는 함수이지만 모든 함수가 method는 아님
 ---
 ---
 #### *Section 15* String
@@ -105,4 +107,14 @@ for..of는 iterable object에 한해 사용 가능 object literal은 사용 불�
 
 *Section 21 More About Function*
 
+ if문, for문 등의 block 내에 let이나 const로 선언된 변수는 block 내에서만 유효함. var로 선언된 변수는 block 밖에서도 사용 가능.
 
+ Lexical scope : 부모 함수의 안에 중첩된 내부 함수는 해당 부모 함수 내에서 정의된 변수에 몇 단계를 거치든 접근 가능. 부모 함수에서 내부 함수에 정의된 변수엔 접근 불가.
+
+객체 안의 method 안에서 객체를 가리키는 키워드로 this를 사용. 함수를 호출하는 방식에 따라 this가 가리키는 객체가 달라질 수 있음. 
+
+Try/Catch문 : 둘은 항상 같이 사용.
+
+try {오류를 발생시키려 하거나 오류가 날 것으로 예상되는 코드}
+
+catch {try 안에서 예외나 오류가 나왔을 때 실행할 코드}
