@@ -4,4 +4,4 @@ function sing() {
     console.log('Mi');
 }
 
-sing();
+function 
