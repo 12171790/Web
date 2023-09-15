@@ -134,3 +134,11 @@ ArrayMethod 폴더를 확인할 것.
 7. some 메소드 : boolean method. true or false를 반환. 배열 내의 요소 중 하나라도 콜백 함수의 조건을 만족하면 true를 반환. 배열 내의 모든 요소가 조건을 만족하지 못할 경우에만 false를 반환.
 8. every 메소드 : boolean method. true or false를 반환. 배열 내의 모든 요소에 대해 test를 진행. 배열의 모든 요소가 조건을 만족하면 true를 반환. 하나라도 조건을 만족하지 않으면 false를 반환.
 9. reduce 메소드 : 배열을 점차 줄여가면서 최종적으로 하나의 값만을 남김. 
+
+---
+*Section 23 Modern Suntax*
+
+Modern_syntax 폴더를 확인할 것.
+
+1. Default Params : 함수를 선언할 때 매개변수에 default 값을 지정. function add (a, b = 0)
+2. 
