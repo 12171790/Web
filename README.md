@@ -141,4 +141,11 @@ ArrayMethod 폴더를 확인할 것.
 Modern_syntax 폴더를 확인할 것.
 
 1. Default Params : 함수를 선언할 때 매개변수에 default 값을 지정. function add (a, b = 0)
-2. 
+
+---
+*Section 24 Document Object Model*
+
+Document_Object_Model 폴더를 확인할 것.
+
+1. Document는 하나의 객체. 브라우저에서 해당 페이지의 컨텐츠를 사용하여 자동으로 생성. Document의 메서드나 특성을 이용하여 웹페이지 변경 가능.
+2. Selecting Method : 
