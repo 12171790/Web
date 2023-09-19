@@ -141,4 +141,64 @@ ArrayMethod 폴더를 확인할 것.
 Modern_syntax 폴더를 확인할 것.
 
 1. Default Params : 함수를 선언할 때 매개변수에 default 값을 지정. function add (a, b = 0)
-2. 
+
+---
+*Section 24 Document Object Model*
+
+Document_Object_Model 폴더를 확인할 것.
+
+1. Document는 하나의 객체. 브라우저에서 해당 페이지의 컨텐츠를 사용하여 자동으로 생성. Document의 메서드나 특성을 이용하여 웹페이지 변경 가능.
+2. Selecting Method : 요소를 선택하기 위함.
+
+document.getElementById('태그의 ID'). ID에 해당하는 요소를 페이지에서 찾아서 객체로 가져오라는 의미. 해당 ID를 갖는 태그가 없다면 null을 반환.
+
+document.getElementsByTagName('태그 이름'). 해당 태그에 해당하는 요소를 모두 선택. HTML Collection을 반환. 각각은 Element(JavaScript에서 반환되는 객체에 해당. HTML 요소를 나타내는 모든 특성을 지닌 객체.). 이는 배열이 아님. 반복 가능한 객체이므로 for of는 사용 가능.
+
+document.getElementsByClassName('클래스 이름'). 해당 클래스에 해당하는 요소를 모두 선택. 이 역시 HTML Collection을 반환.
+
+document.querySelector(). 하나의 메서드를 사용해서 ID, 클래스 이름, 속성 등 원하는 선택자를 무엇이든 이용하여 선택할 수 있다. css에서 쓰는 것과 동일한 류의 선택자 사용. (#id, .class, a[title="Java"](앵커 태크의 title="Java"인 요소)등). 첫번째로 매치되는 요소를 반환. querySelector('img:nth-of-type(2)')를 사용하여 img 태그 중 두번째 요소를 선택할 수 있음.
+
+document.querySelectorAll(). 일치하는 모든 요소를 반환.
+
+3. Manipulating Method : 요소를 선택한 후 하는 작업. Element에는 엄청 많은 특성이 존재하므로 MDN을 참고.
+
+innerText : 여는 태그와 닫는 태그 사이의 text. 태그는 무시.
+
+textContent : innerText가 editor에 저장된 형태를 보여줌. 요소 안의 모든 콘텐츠를 보여줌. ex)display: none을 사용한 요소도 보여줌.
+
+innerHTML : 특정 요소에 포함된 마크업의 전체 내용을 출력. text 뿐만 아니라 HTML 태그 요소 또한 출력됨.
+
+getAttribute('특성 ex)href, id 등등') : HTML 자체에서 특성에 해당하는 요소를 가져옴.
+
+setAttribute('특성 ex)href, id 등', '바꾸려는 내용') : 특성의 내용을 두번째 인수의 내용으로 변경할 수 있음.
+
+h1.style을 하여 style 객체(모든 특성이 카멜케이스로 되어 있음)를 불러와도 스타일 시트에서 지정한 스타일은 포함되지 않음(인라인 스타일을 볼 수 있음). 대신 style 객체를 불러와 스타일을 바꾸는 것은 가능 (인라인 스타일 적용).
+
+ex) const h1 = document.querySelector('h1') h1.style.color = 'green', h1.style.fontSize = '3em'
+
+h2.classList : 요소의 클래스를 검색하여 조작하기 위한 객체. classList에 다양한 메서드가 존재. MDN을 참고할 것. h2.classList.toggle('class 이름')을 사용하면 해당 클래스를 추가했다가 다음 번 실행에서는 삭제하고, 일종의 껐다 켰다하는 것을 반복할 수 있음.
+
+h2.parentElement : h2의 부모 요소에 접근 가능.
+
+h2.children : h2의 자식 요소들에 접근 가능. 하나가 아닌 여러 개 일 수 있다. HTML Collection 형태로 반환.
+
+nextSibling, previousSibling : 한 요소에서 인접한 형제 요소로 이동 가능. 이는 Element가 아닌 node를 반환.
+
+nextElementSibling, previousElementSibling : 인접한 형제 요소로 이동. Element를 반환.
+
+document.createElement('h3') : 페이지에 h3 요소를 추가.
+
+document.body.appendChild(newImg) : newImg를 body의 마지막 자식으로 추가.
+
+p.append('', '') : 여러 개의 텍스트를 요소 마지막에 추가할 수 있다. prepend는 앞에 추가
+
+insertAdjacentElement('삽입하려는 위치', 삽입할 요소) : 요소를 삽입하려는 위치가 특정 요소의 앞인지, 뒤인지 또는 특정 요소 내인지 등을 알려줘야함. 
+
+after(삽입할 요소) : 특정 요소 뒤에 내용을 삽입.
+
+removeChild(제거하려는 자식 요소) : 제거하려는 요소의 부모 요소를 선택하여 removeChild 메서드를 실행해야함.
+
+remove() : 제거하려는 요소에서 메서드를 실행하면 됨.
+
+
+
