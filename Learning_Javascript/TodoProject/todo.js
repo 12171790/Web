@@ -16,11 +16,16 @@ while (true) {
     else if (input === 'delete') {
         input = prompt('Enter your schedule index to delete.');
         input = parseInt(input);
+        //input이 NaN이면 true를 반환. NaN이 아니면 false
         if (!Number.isNaN(input)) {
             //input이 문자열이라면 splice가 문자열을 숫자로 바꾸려고 함. 숫자로 바꿀 수 없다면 0으로 변환.
             todoList.splice(input, 1);
             console.log('Todo Removed');
         }
+        else {
+            console.log('Unknown index');
+        }
+
     }
     else if (input === 'quit' || input === 'q') {
         console.log('You quit the app.');

@@ -16,3 +16,8 @@ for (let row of seatingChart) {
         console.log(student);
     }
 }
+
+for (let char of 'hellow world') {
+    console.log(char);
+}
+
