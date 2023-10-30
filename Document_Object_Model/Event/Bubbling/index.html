@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!--p태그 안의 버튼을 클릭하면 p태그의 onclick과 button 태그의 onclick 둘 다 작동하게 됨.
+    이것을 이벤트 버블링이라 함. 맨 아래 레벨부터 상위 레벨까지 이벤트가 연달아 발생.
+-->
+    <p onclick="alert('paragraph clicked')">
+        I am paragraph
+        <button onclick="alert('button clicked')">Click</button>
+    </p>
+
+    <div id="container">
+        Click To hide
+        <button id="ColorChanger">Change Color</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
